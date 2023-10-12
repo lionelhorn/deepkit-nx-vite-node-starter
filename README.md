@@ -1,4 +1,5 @@
 Repro nx + deepkit + vite-node
+https://discord.com/channels/759513055117180999/1161961227413622864
 
 ## Windows
 - node v20.8.0
