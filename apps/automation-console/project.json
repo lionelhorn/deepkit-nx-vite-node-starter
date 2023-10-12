@@ -1,0 +1,37 @@
+{
+  "name": "automation-console",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/automation-console/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/automation-console",
+        "main": "apps/automation-console/src/index.ts",
+        "tsConfig": "apps/automation-console/tsconfig.lib.json",
+        "assets": ["apps/automation-console/*.md"]
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "automation-console:build",
+        "watch": true,
+        "args": ["server:start"]
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "automation-console:build:development"
+        },
+        "production": {
+          "buildTarget": "automation-console:build:production"
+        }
+      },
+      "dependsOn": ["build", "^build"]
+    }
+  },
+  "tags": []
+}
