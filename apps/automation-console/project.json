@@ -6,31 +6,28 @@
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/automation-console",
         "main": "apps/automation-console/src/index.ts",
         "tsConfig": "apps/automation-console/tsconfig.lib.json",
-        "assets": ["apps/automation-console/*.md"]
+        "assets": [
+          "apps/automation-console/*.md"
+        ]
       }
     },
-    "serve": {
-      "executor": "@nx/js:node",
-      "defaultConfiguration": "development",
+    "serve-server": {
+      "executor": "nx:run-commands",
       "options": {
-        "buildTarget": "automation-console:build",
-        "watch": true,
-        "args": ["server:start"]
+        "command": "vite-node --config=apps/automation-console/vite.config.ts --root apps/automation-console/ apps/automation-console/src/app.ts"
       },
       "configurations": {
-        "development": {
-          "buildTarget": "automation-console:build:development"
-        },
-        "production": {
-          "buildTarget": "automation-console:build:production"
+        "watch": {
+          "command": "vite-node --watch --config=apps/automation-console/vite.config.ts --root apps/automation-console/ apps/automation-console/src/app.ts"
         }
-      },
-      "dependsOn": ["build", "^build"]
+      }
     }
   },
   "tags": []

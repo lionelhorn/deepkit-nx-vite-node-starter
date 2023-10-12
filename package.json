@@ -29,7 +29,7 @@
     "@deepkit/stopwatch": "1.0.1-alpha.102",
     "@deepkit/template": "1.0.1-alpha.102",
     "@deepkit/type": "1.0.1-alpha.102",
-    "@deepkit/type-compiler": "1.0.1-alpha.97",
+    "@deepkit/type-compiler": "1.0.1-alpha.102",
     "@deepkit/vite": "1.0.1-alpha.102",
     "@deepkit/workflow": "1.0.1-alpha.102"
   },
@@ -50,5 +50,10 @@
     "vite": "4.4.11",
     "vite-tsconfig-paths": "4.2.1"
   },
-  "reflection": "true"
+  "reflection": "true",
+  "pnpm": {
+    "patchedDependencies": {
+      "@deepkit/type-compiler@1.0.1-alpha.102": "patches/@deepkit__type-compiler@1.0.1-alpha.102.patch"
+    }
+  }
 }
