@@ -14,22 +14,22 @@ class Bootstrap {
 	onMainBoostrap() {
 		// Some tests
 
-		console.log(typeOf<User>());
-
-		const l1 = (event, logger: LoggerInterface) => {
-			logger.log(' Automation database filled with data. Open http://127.0.0.1:8080/api to visit the API.');
-		};
-
-		console.log(typeOf<typeof l1>());
-
-		function l2(event: any, logger: LoggerInterface) {
-		}
-
-		console.log(reflect(l2));
-
-		function l3(event: any, logger: LoggerInterface) {
-		}
-		console.log(l3.__type);
+		// console.log(typeOf<User>());
+		//
+		// const l1 = (event, logger: LoggerInterface) => {
+		// 	logger.log(' Automation database filled with data. Open http://127.0.0.1:8080/api to visit the API.');
+		// };
+		//
+		// console.log(typeOf<typeof l1>());
+		//
+		// function l2(event: any, logger: LoggerInterface) {
+		// }
+		//
+		// console.log(reflect(l2));
+		//
+		// function l3(event: any, logger: LoggerInterface) {
+		// }
+		// console.log(l3.__type);
 
 		this.logger.log(' Automation database filled with data. Open http://127.0.0.1:8080/api to visit the API.');
 	}
