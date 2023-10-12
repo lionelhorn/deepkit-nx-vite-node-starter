@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 patchedDependencies:
+  '@deepkit/framework@1.0.1-alpha.103':
+    hash: owpqq33h7si4lytgqjzdhsi3yq
+    path: patches/@deepkit__framework@1.0.1-alpha.103.patch
   '@deepkit/type-compiler@1.0.1-alpha.102':
     hash: 3ht36tq7uy357uldgziccuk6tm
     path: patches/@deepkit__type-compiler@1.0.1-alpha.102.patch
@@ -36,7 +39,7 @@ dependencies:
     version: 1.0.1-alpha.102(@deepkit/core@1.0.1-alpha.100)(@deepkit/injector@1.0.1-alpha.102)(@deepkit/type@1.0.1-alpha.102)
   '@deepkit/framework':
     specifier: 1.0.1-alpha.103
-    version: 1.0.1-alpha.103(@deepkit/app@1.0.1-alpha.102)(@deepkit/broker@1.0.1-alpha.102)(@deepkit/bson@1.0.1-alpha.102)(@deepkit/core-rxjs@1.0.1-alpha.100)(@deepkit/core@1.0.1-alpha.100)(@deepkit/crypto@1.0.1-alpha.89)(@deepkit/event@1.0.1-alpha.102)(@deepkit/http@1.0.1-alpha.102)(@deepkit/injector@1.0.1-alpha.102)(@deepkit/logger@1.0.1-alpha.102)(@deepkit/orm@1.0.1-alpha.102)(@deepkit/rpc-tcp@1.0.1-alpha.102)(@deepkit/rpc@1.0.1-alpha.102)(@deepkit/sql@1.0.1-alpha.103)(@deepkit/stopwatch@1.0.1-alpha.102)(@deepkit/template@1.0.1-alpha.102)(@deepkit/type@1.0.1-alpha.102)(@deepkit/workflow@1.0.1-alpha.102)(@oclif/config@1.18.17)(rxjs@7.5.7)
+    version: 1.0.1-alpha.103(patch_hash=owpqq33h7si4lytgqjzdhsi3yq)(@deepkit/app@1.0.1-alpha.102)(@deepkit/broker@1.0.1-alpha.102)(@deepkit/bson@1.0.1-alpha.102)(@deepkit/core-rxjs@1.0.1-alpha.100)(@deepkit/core@1.0.1-alpha.100)(@deepkit/crypto@1.0.1-alpha.89)(@deepkit/event@1.0.1-alpha.102)(@deepkit/http@1.0.1-alpha.102)(@deepkit/injector@1.0.1-alpha.102)(@deepkit/logger@1.0.1-alpha.102)(@deepkit/orm@1.0.1-alpha.102)(@deepkit/rpc-tcp@1.0.1-alpha.102)(@deepkit/rpc@1.0.1-alpha.102)(@deepkit/sql@1.0.1-alpha.103)(@deepkit/stopwatch@1.0.1-alpha.102)(@deepkit/template@1.0.1-alpha.102)(@deepkit/type@1.0.1-alpha.102)(@deepkit/workflow@1.0.1-alpha.102)(@oclif/config@1.18.17)(rxjs@7.5.7)
   '@deepkit/http':
     specifier: 1.0.1-alpha.102
     version: 1.0.1-alpha.102(@deepkit/app@1.0.1-alpha.102)(@deepkit/core@1.0.1-alpha.100)(@deepkit/event@1.0.1-alpha.102)(@deepkit/injector@1.0.1-alpha.102)(@deepkit/logger@1.0.1-alpha.102)(@deepkit/stopwatch@1.0.1-alpha.102)(@deepkit/template@1.0.1-alpha.102)(@deepkit/type@1.0.1-alpha.102)(@deepkit/workflow@1.0.1-alpha.102)
@@ -1662,7 +1665,7 @@ packages:
     resolution: {integrity: sha512-N/OU6KXoRKBch36UYWUrLCPdNPPuuZE97weeW1gisCLXxFnFrRpx4blCS1p1lQtFd/VD/WqDuO33AtvXlghn0Q==}
     dev: false
 
-  /@deepkit/framework@1.0.1-alpha.103(@deepkit/app@1.0.1-alpha.102)(@deepkit/broker@1.0.1-alpha.102)(@deepkit/bson@1.0.1-alpha.102)(@deepkit/core-rxjs@1.0.1-alpha.100)(@deepkit/core@1.0.1-alpha.100)(@deepkit/crypto@1.0.1-alpha.89)(@deepkit/event@1.0.1-alpha.102)(@deepkit/http@1.0.1-alpha.102)(@deepkit/injector@1.0.1-alpha.102)(@deepkit/logger@1.0.1-alpha.102)(@deepkit/orm@1.0.1-alpha.102)(@deepkit/rpc-tcp@1.0.1-alpha.102)(@deepkit/rpc@1.0.1-alpha.102)(@deepkit/sql@1.0.1-alpha.103)(@deepkit/stopwatch@1.0.1-alpha.102)(@deepkit/template@1.0.1-alpha.102)(@deepkit/type@1.0.1-alpha.102)(@deepkit/workflow@1.0.1-alpha.102)(@oclif/config@1.18.17)(rxjs@7.5.7):
+  /@deepkit/framework@1.0.1-alpha.103(patch_hash=owpqq33h7si4lytgqjzdhsi3yq)(@deepkit/app@1.0.1-alpha.102)(@deepkit/broker@1.0.1-alpha.102)(@deepkit/bson@1.0.1-alpha.102)(@deepkit/core-rxjs@1.0.1-alpha.100)(@deepkit/core@1.0.1-alpha.100)(@deepkit/crypto@1.0.1-alpha.89)(@deepkit/event@1.0.1-alpha.102)(@deepkit/http@1.0.1-alpha.102)(@deepkit/injector@1.0.1-alpha.102)(@deepkit/logger@1.0.1-alpha.102)(@deepkit/orm@1.0.1-alpha.102)(@deepkit/rpc-tcp@1.0.1-alpha.102)(@deepkit/rpc@1.0.1-alpha.102)(@deepkit/sql@1.0.1-alpha.103)(@deepkit/stopwatch@1.0.1-alpha.102)(@deepkit/template@1.0.1-alpha.102)(@deepkit/type@1.0.1-alpha.102)(@deepkit/workflow@1.0.1-alpha.102)(@oclif/config@1.18.17)(rxjs@7.5.7):
     resolution: {integrity: sha512-JVTfw/cCMLVH7Lk577uW5xRxs3m+fPzNw8TKj4GNHcW2ov7Ups/8+BlBbNorEcvaUXYCvJyIpypmP3W6zHX3KQ==}
     peerDependencies:
       '@deepkit/app': ^1.0.1-alpha.13
@@ -1732,6 +1735,7 @@ packages:
       - supports-color
       - utf-8-validate
     dev: false
+    patched: true
 
   /@deepkit/http@1.0.1-alpha.102(@deepkit/app@1.0.1-alpha.102)(@deepkit/core@1.0.1-alpha.100)(@deepkit/event@1.0.1-alpha.102)(@deepkit/injector@1.0.1-alpha.102)(@deepkit/logger@1.0.1-alpha.102)(@deepkit/stopwatch@1.0.1-alpha.102)(@deepkit/template@1.0.1-alpha.102)(@deepkit/type@1.0.1-alpha.102)(@deepkit/workflow@1.0.1-alpha.102):
     resolution: {integrity: sha512-nxVodz08OaHJb4Rfhw72px7lUWszME0lPodPgYn9Ou7kyf/C9jJXZ9liowVnV/g8deKVtVAN31ksX3H6GFovNA==}
@@ -5125,7 +5129,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001547
-      electron-to-chromium: 1.4.551
+      electron-to-chromium: 1.4.552
       node-releases: 2.0.13
       update-browserslist-db: 1.0.13(browserslist@4.22.1)
     dev: true
@@ -5182,7 +5186,7 @@ packages:
   /call-bind@1.0.2:
     resolution: {integrity: sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA==}
     dependencies:
-      function-bind: 1.1.1
+      function-bind: 1.1.2
       get-intrinsic: 1.2.1
 
   /callsites@3.1.0:
@@ -5898,8 +5902,8 @@ packages:
       jake: 10.8.7
     dev: true
 
-  /electron-to-chromium@1.4.551:
-    resolution: {integrity: sha512-/Ng/W/kFv7wdEHYzxdK7Cv0BHEGSkSB3M0Ssl8Ndr1eMiYeas/+Mv4cNaDqamqWx6nd2uQZfPz6g25z25M/sdw==}
+  /electron-to-chromium@1.4.552:
+    resolution: {integrity: sha512-qMPzA5TEuOAbLFmbpNvO4qkBRe2B5dAxl6H4KxqRNy9cvBeHT2EyzecX0bumBfRhHN8cQJrx6NPd0AAoCCPKQw==}
     dev: true
 
   /emittery@0.13.1:
@@ -6389,8 +6393,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /function-bind@1.1.1:
-    resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
+  /function-bind@1.1.2:
+    resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
   /generic-names@4.0.0:
     resolution: {integrity: sha512-ySFolZQfw9FoDb3ed9d80Cm9f0+r7qj+HJkWjeD9RBfpxEVTlVhol+gvaQB/78WbwYfbnNh8nWHHBSlg072y6A==}
@@ -6415,7 +6419,7 @@ packages:
   /get-intrinsic@1.2.1:
     resolution: {integrity: sha512-2DcsyfABl+gVHEfCOaTrWgyt+tb6MSEGmKq+kI5HwLbIYgjgmMcV8KQ41uaKz1xxUcn9tJtgFbQUEVcEbd0FYw==}
     dependencies:
-      function-bind: 1.1.1
+      function-bind: 1.1.2
       has: 1.0.4
       has-proto: 1.0.1
       has-symbols: 1.0.3
