@@ -1,4 +1,4 @@
-import {MinLength, validate} from "@deepkit/type";
+import {MinLength, typeOf, validate} from "@deepkit/type";
 
 export interface User {
 	id: number;
@@ -6,5 +6,6 @@ export interface User {
 }
 
 export function testUser() {
+	console.log(typeOf<User>());
 	console.log(validate<User>({id: 1, username: 'Joe'}));
 }

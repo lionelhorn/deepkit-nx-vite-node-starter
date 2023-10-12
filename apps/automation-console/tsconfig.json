@@ -1,10 +1,10 @@
 {
   "extends": "../../tsconfig.base.json",
-  "files": [],
-  "include": [],
+  "include": ["src/**/*{ts,tsx}"],
   "references": [
     {
       "path": "./tsconfig.lib.json"
     }
-  ]
+  ],
+  "reflection": true
 }
