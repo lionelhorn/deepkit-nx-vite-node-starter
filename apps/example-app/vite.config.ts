@@ -9,6 +9,7 @@ export default defineConfig(({mode, ssrBuild}) => {
   return {
     build: {
       modulePreload: false,
+      watch: true,
       minify: false,
       rollupOptions: {
         preserveEntrySignatures: "strict",
@@ -33,7 +34,12 @@ export default defineConfig(({mode, ssrBuild}) => {
       deepkitType({
         // We need to set the tsconfig path here otherwise it may fail if no "cwd" set in nx task
         // https://github.com/deepkit/deepkit-framework/blob/c5642fac13ab3aa2cfb56588c2240d05af628a61/packages/vite/src/plugin.ts#L30
-        tsConfig: resolve(__dirname, "tsconfig.json")
+        tsConfig: resolve(__dirname, "tsconfig.json"),
+        compilerOptions: {
+          // Needed for proper line mapping.
+          // https://discordapp.com/channels/759513055117180999/1161961227413622864/1162425695650201680
+          sourceMap: true
+        }
       }),
       nxViteTsPaths(),
       // !ssrBuild && splitVendorChunkPlugin(),

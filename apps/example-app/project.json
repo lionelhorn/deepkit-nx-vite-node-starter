@@ -1,0 +1,16 @@
+{
+  "name": "example-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/example-app/src",
+  "projectType": "library",
+  "targets": {
+    "serve-vite": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/example-app",
+        "command": "vite-node --config=vite.config.ts --root . ./src/app.ts"
+      }
+    }
+  },
+  "tags": []
+}

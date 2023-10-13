@@ -1,12 +1,13 @@
-Repro nx + deepkit + vite-node
-https://discord.com/channels/759513055117180999/1161961227413622864
+Nx + deepkit + vite-node starter
 
-## Windows
-- node v20.8.0
-- win 10
-- pnpm 8.8.0
+- Debugging with sourcemap works.
+- 
+https://discord.com/channels/759513055117180999/1161961227413622864
 
 ```shell
 pnpm install
-nx run automation-console:serve-server
+```
+
+```shell
+nx run example-app:serve-vite
 ```
