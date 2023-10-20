@@ -11,7 +11,7 @@
   "tasks": {
     "dev": {
       "name": "dev",
-      "command": "nx run example-app:serve-vite",
+      "command": "pnpm dev",
       "runAtStart": true
     }
   }
