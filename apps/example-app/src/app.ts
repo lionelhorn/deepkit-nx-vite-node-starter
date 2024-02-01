@@ -3,7 +3,7 @@ import {App} from '@deepkit/app';
 import {FrameworkModule, onServerMainBootstrapDone} from '@deepkit/framework';
 import {LoggerInterface} from "@deepkit/logger";
 import {eventDispatcher} from "@deepkit/event";
-import {HttpControllerExample} from "./HttpControllerExample";
+import {deepCopy} from "@lionelhorn/utils";
 
 class Bootstrap {
 	constructor(private logger: LoggerInterface) {
@@ -12,6 +12,8 @@ class Bootstrap {
 	@eventDispatcher.listen(onServerMainBootstrapDone)
 	onMainBoostrap() {
 		this.logger.log('onServerMainBootstrapDone: onMainBoostrap');
+		const fm = new FrameworkModule()
+		const copy = deepCopy(fm)
 	}
 }
 
@@ -19,7 +21,7 @@ class Bootstrap {
 const app = new App({
 	providers: [],
 	listeners: [Bootstrap],
-	controllers: [HttpControllerExample],
+	controllers: [],
 	imports: [
 		new FrameworkModule({debug: true}),
 		new ApiConsoleModule({
